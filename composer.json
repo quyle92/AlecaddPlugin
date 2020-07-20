@@ -1,0 +1,17 @@
+{
+    "name": "dell/alecadd-plugin",
+    "description": "awesome starter plugin example",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "quyle92",
+            "email": "free2idol@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4" : {"Inc\\": "./inc/"}
+    }
+}

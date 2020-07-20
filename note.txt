@@ -1,0 +1,9 @@
+1/ alecadd-plugin-activate.php: class AlecaddPluginActivate   phải nằm trong {}, ko sẽ lỗi “Parse error: syntax error, unexpected 'class'"
+
+2/ composer.json:    "type": "project" ->"project" must be in lowecase, else error. Ref: https://github.com/anchorcms/anchor-cms/issues/1330
+
+3/ SettingsLinks.php: plugin_action_links_{$plugin_file} : {$plugin_file}  is Path to the plugin file relative to the plugins directory (in this case, this is AlecaddPlugin/alecadd-plugin.php);
+
+4/ Admin.php: must not put public function __construct () in class Admin, else $this->plugin_path at function admin_index() will not be triggered. But if you wanna put  function __construct there, ,you have to use parent::__construct(); at function admin_index()(so hard to realise it :) Found this after practising "drop off"... at first, I did not realise it even though making a lot of testing and digging, then I drop off and moved to the next one, then suddenly the problem disappeared and then I started to figure out why by tracing back and finally realise the culprit is function __construct ())
+
+5/document.querySelector(activePaneID) có activePaneID=#tab-1 thì nó sẽ chọn <div id="tab-1" class="tab-pane active">...</div> vì #tab-1 nó hiểu là id="tab-1". Ref: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_queryselector
