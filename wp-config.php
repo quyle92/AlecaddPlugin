@@ -1,5 +1,6 @@
 <?php
 
+
 /**
 
  * The base configuration for WordPress
@@ -41,7 +42,7 @@
 
 /** The name of the database for WordPress */
 
-define( 'DB_NAME', 'alecadd-plugin' );
+define( 'DB_NAME', 'alecaddd' );
 
 
 /** MySQL database username */
@@ -102,6 +103,7 @@ define( 'SECURE_AUTH_SALT', 's!hzcWnNqK@<Q?#cEv9jA4!n*x%X^k~M-$o:!ll,>~_cv/OE}ru
 define( 'LOGGED_IN_SALT',   'v*2`Fm2xg&o%|k4~C|ZXP@0TLUoID~*/S`PkZY!3/`IQEn?6DO]Q{jRY,6g?CW<J' );
 
 define( 'NONCE_SALT',       'c)]eT).o.kq.=0 ,=[o[O.QD(+Rqrk|:$(pTyyj,5_k8bIxT9K|qz+gu10)M`3Ko' );
+define('WP_HTTP_BLOCK_EXTERNAL', false);
 
 
 /**#@-*/

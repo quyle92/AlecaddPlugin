@@ -1,0 +1,65 @@
+#prd-cate-list {
+    width:100%;
+    position: relative;
+    /*border: 1px solid #eaeaea;*/
+    border-top: none;
+    padding-left: 39px;
+    top: -11px;
+}
+.main-cate ul {
+    list-style: none;
+    margin-left: -40px; background: #fff;
+}
+.main-cate > ul > li {
+    border: 1px solid #eaeaea;
+    border-top-color: transparent;
+    border-left: 2px solid transparent;
+    border-right: none;
+    background-color: #fff;
+    margin-left: 0;
+}
+.main-cate > ul > li > a {
+    padding: 0.554rem 0 0.554rem 0.8rem;
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+}
+.main-cate > ul > li > a > img {
+    width: 25px;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+.main-cate > ul > li > ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    left: 113%;
+    top: -25px;
+    border: 1px solid #0068d9;
+    z-index: 1000;
+    width: 300.5%;
+    height: auto;
+    min-height: 100.5%;
+    padding: 20px 20px;
+}
+.main-cate > ul > li > ul > li {
+    display: inline-block;
+    padding: 0 30px;
+    margin-bottom: 15px;
+}
+.main-cate > ul > li > ul > li > a {
+    display: block;
+}
+.main-cate > ul > li > ul > li > a > img {
+    margin: 18px auto 7px auto;
+    max-width: 100%;
+}
+.main-cate > ul > li > ul > li > a > span.mc_title {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.main-cate > ul > li:hover ul {display: block!important}
+

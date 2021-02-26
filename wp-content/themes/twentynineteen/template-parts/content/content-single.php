@@ -20,6 +20,7 @@
 
 	<div class="entry-content">
 		<?php
+		the_post_thumbnail();
 		the_content(
 			sprintf(
 				wp_kses(

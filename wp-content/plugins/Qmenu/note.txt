@@ -1,0 +1,4 @@
+1.class-qmenu.php: 
+Problem? Options API - Validation Callback $input is NULL
+Solution?  Wordpress suggests to have one option saving an array of values
+Ref: https://wordpress.stackexchange.com/questions/306654/options-api-validation-callback-input-is-null

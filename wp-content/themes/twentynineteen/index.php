@@ -21,6 +21,10 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php
+		$paged = get_query_var( 'paged', 1 );
+		$args = array('posts_per_page' => 3, 'paged' => $paged);
+		$query = new WP_Query( $args );
+		
 		if ( have_posts() ) {
 
 			// Load posts loop.
@@ -38,6 +42,7 @@ get_header();
 			get_template_part( 'template-parts/content/content', 'none' );
 
 		}
+		wp_reset_postdata();
 		?>
 
 		</main><!-- .site-main -->

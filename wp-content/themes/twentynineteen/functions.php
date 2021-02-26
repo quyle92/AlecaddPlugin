@@ -59,8 +59,11 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 				'menu-1' => __( 'Primary', 'twentynineteen' ),
 				'footer' => __( 'Footer Menu', 'twentynineteen' ),
 				'social' => __( 'Social Links Menu', 'twentynineteen' ),
+				'test' => __( 'Test Menu', 'twentynineteen'),
+				'vertical-menu' => __( 'Vertical Menu', 'twentynineteen')
 			)
 		);
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -233,6 +236,10 @@ function twentynineteen_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', array(), '4.5.2', true );
+	// wp_enqueue_script( 'js', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), '4.5.2', true );
+	// wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js', array(), '4.5.2', true );
 }
 add_action( 'wp_enqueue_scripts', 'twentynineteen_scripts' );
 
@@ -328,3 +335,16 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/** Walker_Nav_Primary */
+require get_template_directory() . '/inc/walker.php';
+require get_template_directory() . '/inc/walker-giaiphapit.php';
+
+// Admin footer modification
+  
+function remove_footer_admin () 
+{
+    echo "";
+}
+ 
+add_filter('admin_footer_text', 'remove_footer_admin');

@@ -29,16 +29,31 @@
 				<?php echo $description; ?>
 			</p>
 	<?php endif; ?>
-	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
+	<?php if ( has_nav_menu( 'test' ) ) : ?>
 		<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
 			<?php
+			// wp_nav_menu(
+			// 	array(
+			// 		'theme_location' => 'menu-1',
+			// 		'menu_class'     => 'main-menu',
+			// 		'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					
+			// 		//'walker' => new Walker_Nav_Primary()
+			// 	)
+			// );
 			wp_nav_menu(
 				array(
-					'theme_location' => 'menu-1',
+					'theme_location' => 'test',
+					//'menu_class'     => 'nav navbar-nav navbar-right',
 					'menu_class'     => 'main-menu',
-					'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					//'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					'container'     => false,
+					// 'link_before' => 'link_before',
+					// 'link_after' => 'link_after',
+					'walker' => new Walker_Nav_Primary()
 				)
 			);
+
 			?>
 		</nav><!-- #site-navigation -->
 	<?php endif; ?>

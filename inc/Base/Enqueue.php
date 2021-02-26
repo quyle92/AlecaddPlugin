@@ -12,6 +12,12 @@ if ( !class_exists('Enqueue') )
 		}
 
 		function enqueue(){
+
+			/*this WP built-in script is for media upload purpose (Part 37)*/
+			wp_enqueue_script( 'media-upload');
+			wp_enqueue_media();
+			/*End this WP built-in script is for media upload purpose*/
+
 	 		wp_enqueue_style( 'mypluginstyle', $this->plugin_url  . 'assets/mystyle.css');
 	 		wp_enqueue_script( 'mypluginscript', $this->plugin_url  . 'assets/myscript.js');
  		}

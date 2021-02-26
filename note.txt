@@ -1,4 +1,4 @@
-1/ alecadd-plugin-activate.php: class AlecaddPluginActivate   phải nằm trong {}, ko sẽ lỗi “Parse error: syntax error, unexpected 'class'"
+﻿1/ alecadd-plugin-activate.php: class AlecaddPluginActivate   phải nằm trong {}, ko sẽ lỗi “Parse error: syntax error, unexpected 'class'"
 
 2/ composer.json:    "type": "project" ->"project" must be in lowecase, else error. Ref: https://github.com/anchorcms/anchor-cms/issues/1330
 
@@ -7,3 +7,26 @@
 4/ Admin.php: must not put public function __construct () in class Admin, else $this->plugin_path at function admin_index() will not be triggered. But if you wanna put  function __construct there, ,you have to use parent::__construct(); at function admin_index()(so hard to realise it :) Found this after practising "drop off"... at first, I did not realise it even though making a lot of testing and digging, then I drop off and moved to the next one, then suddenly the problem disappeared and then I started to figure out why by tracing back and finally realise the culprit is function __construct ())
 
 5/document.querySelector(activePaneID) có activePaneID=#tab-1 thì nó sẽ chọn <div id="tab-1" class="tab-pane active">...</div> vì #tab-1 nó hiểu là id="tab-1". Ref: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_queryselector
+
+6/ make sure no typo in action hook name, else it won't work and display no errors.
+Common mistakes: 
+add_filter( "manage_testimonial_posts_columns", 'set_custom_columns' );==>wrong
+Fixed: 
+add_filter( "manage_testimonial_posts_columns", array( $this, 'set_custom_columns') );
+
+7/ TestimonialController.php: add_action('wp_ajax_{action_name_specified_at_contact-form.php'})
+
+8/class-live-review.php: wp_insert_post( $client_review ) phải gán biến $post_insert, nếu ko thì ở chỗ if ( ! $post_insert )
+mà để if (! wp_insert_post( $client_review ) ) sẽ insert post vào database 2 lần
+
+9/class-live-review.php: create_review_form():
+phải để là: echo "<script src=\"  LIVE_REVIEW_URL  '/assets/form-handle.js\">  </script>";
+nếu để theo kiều string concatenation ('<script src="' .  LIVE_REVIEW_URL  . '/assets/form-handle.js">  </script>') ajax sẽ submit 2 lần.
+
+10/ form-handle.js:
+ let reviewForm = document.getElementById('review_form');
+reviewForm.querySelector('[data-error="invalidName"]').classList.add('show');
+- nếu viết nửa javascript, nửa jquery => querySelector() sẽ ra error:
+ let reviewForm = $('#review_form);
+reviewForm.querySelector('[data-error="invalidName"]').classList.add('show');
+==> cái này querySelector() sẽ ra error;

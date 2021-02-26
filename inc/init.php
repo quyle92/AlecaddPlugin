@@ -22,7 +22,7 @@ final class Init
 	 * 	@return 
 	 */
 
-	public static function register_services ()	{
+	public static function register_services ()	{echo "	 * 	Loop thru classes, instantiate them and 	 * 	Loop thru classes, instantiate them and 	 * 	Loop thru classes, instantiate them and "
 		foreach (self::get_services() as $class)
 			{
 				$service = self::instantiate($class);
