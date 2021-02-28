@@ -7,3 +7,9 @@ Stack trace:
 #4 {main}
   thrown in F:\webdocs\alecaddplugin\wp-content\plugins\Qmenu\inc\class-qmenu.php on line 60
 
+2021-02-28T11:57:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in F:\webdocs\alecaddplugin\wp-content\plugins\Qmenu\helper\custom-function.php on line 122
+
+2021-02-28T11:58:06+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in F:\webdocs\alecaddplugin\wp-content\plugins\Qmenu\helper\custom-function.php on line 122
+
+2021-02-28T11:58:55+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in F:\webdocs\alecaddplugin\wp-content\plugins\Qmenu\helper\custom-function.php on line 122
+

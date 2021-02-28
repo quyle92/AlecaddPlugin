@@ -43,7 +43,7 @@ final class QMENU {
 			$this->delOption();
 		}
 
-
+		add_action ('admin_init', array($this, 'registerCustomFields'));
 		add_action( 'admin_menu', array( $this, 'setShortcodePage' ) );
 
 		add_shortcode('print_qmenu', array( $this, 'render_qmenu_template' ) );
@@ -153,6 +153,8 @@ final class QMENU {
 
 	}
 
+
+
 	public function registerCustomFields(){
 
 		//register_setting
@@ -210,11 +212,12 @@ final class QMENU {
 			 		$output[ $menu_id ] = $input;
 			 	}
 			}
-			//(3)
-			if( ! DOING_AJAX ){
+			//this one is for add new option
+			if( ! in_array($menu_id, $menu_id_arr)  ){
 				return array_filter( $output ) ;
 			}
-			//var_dump ($output);die;
+			
+			//this one is for update current option
 			$update = update_option( 'qmenu_options', $output );
 			//var_dump(get_option('qmenu_options'));
 			if( $update ) {
@@ -265,4 +268,3 @@ final class QMENU {
 //add_settings_field only use when there is a need to create fields using add_settings_field, if you create fields yourself then no need.
 //(1)parent là qmenu, ko phải admin.php?page=qmenu vì: ref: https://developer.wordpress.org/reference/functions/add_submenu_page/?replytocom=1404#feedback-editor-1404 . You can refer to CustomPostTypeController.php at AlecaddPlugin
 //(2): phải để đó, chứ enqueue thì nó chạy ko đúng lúc làm deep linking cho tab boostrap 
-//(3): if it is ajax update, then use update_option as "return array_filter( $output )"" only works in api setting circumstance
