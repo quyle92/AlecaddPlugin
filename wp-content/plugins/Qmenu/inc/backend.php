@@ -69,7 +69,7 @@
                     </table>
                 </div>
                 <div class="tab-pane fade" id="tab2success">
-                    <form role="form" class="col-md-12 go-right"  action="options.php" method="post"  enctype=”multipart/form-data”>
+                    <form role="form" class="col-md-12 go-right"  action="options.php" method="post"  enctype=”multipart/form-data”><!--(1)-->
                         <?php
                             settings_fields( "qmenu_option_group" );// same as option_group at register_setting() 
                             // do_settings_sections( 'qmenu' );// same as page in add_settings_section() 
@@ -133,7 +133,7 @@
                         $menu_link =  get_option( 'qmenu_options')[$_POST['edit_menu']]['menu_link']; 
                         $menu_pic  =  get_option( 'qmenu_options')[$_POST['edit_menu']]['menu_pic'];
                         ?>
-                        <input type="hidden" name="action" value="editMenu" />
+                        <input type="hidden" name="action" value="editMenu" /><!-- (2)-->
                         <input id="menu_id" name="menu_id" type="hidden" class="form-control"  value="<?=esc_attr($menu_id)?> "required> 
                         <div class="menu_item form-group col-md-3" >
                             <label for="menu_item">Item</label>
@@ -198,4 +198,5 @@
 /*
 Notes
 **/
-//remember to put options.php at form action
+//(1) remember to put options.php at form action
+//(2) why put <input> tag here? to create an action for ajax api submission. Ref: https://wordpress.stackexchange.com/questions/119445/accept-ajax-call-with-serialized-form-data

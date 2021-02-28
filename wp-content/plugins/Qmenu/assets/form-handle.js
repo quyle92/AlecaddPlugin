@@ -12,12 +12,7 @@
 		    jQuery.ajax({
 		        type: 'POST',
 		        url: jsData.ajaxurl,
-		       // url: 'options.php',
 		        data: formValues,
-		        // data:{
-		        //     action : 'editMenu',
-		        //    	formValues : $.param($('#edit_form').serializeArray()),
-		        // },
 		        success: function(result){
 		        	$('.field-msg.js-form-submission').hide();
 		        	if( result.status == 'success' ){
