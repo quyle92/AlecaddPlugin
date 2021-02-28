@@ -59,3 +59,20 @@ button a[href^="?"]
 .rTableRow       { display: table-row; }
 .rTableCell  { display: table-cell;padding: 3px 10px;
 		    	border: 1px solid #999999; }
+
+/*
+form validation
+ */
+small.js-form-error{
+	display:none;
+}
+
+.field-msg.js-form-submission{
+	display:none;
+}
+
+.field-msg.success.js-form-success{
+	display:none;
+	color:green;
+
+}

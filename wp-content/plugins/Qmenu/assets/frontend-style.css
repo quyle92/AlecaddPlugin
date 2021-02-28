@@ -1,9 +1,10 @@
 #prd-cate-list {
     width:100%;
     position: relative;
-    /*border: 1px solid #eaeaea;*/
+    border: 1px solid #eaeaea;
     border-top: none;
-    padding-left: 39px;
+    border-bottom: none;
+    padding-left: 40px;
     top: -11px;
 }
 .main-cate ul {

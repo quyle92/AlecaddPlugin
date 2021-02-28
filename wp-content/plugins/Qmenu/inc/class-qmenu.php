@@ -34,26 +34,58 @@ final class QMENU {
 
 		add_action ('admin_menu', array( $this, 'menu') );
 		
-
-		if ( isset( $_REQUEST['page'] ) && 'qmenu' == $_REQUEST['page'] ) { 
+		add_action( 'wp_ajax_editMenu', array( $this, 'editMenu' ) );
+		//if ( isset( $_REQUEST['page'] ) && 'qmenu' == $_REQUEST['page'] || $_REQUEST['action'] == 'editMenu') { 
 			add_action ( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ));
-		}
+		//}
 
 		if ( isset( $_POST['del_option'] )  ) {
 			$this->delOption();
 		}
 
-		add_action ('admin_init', array($this, 'registerCustomFields'));
+
 		add_action( 'admin_menu', array( $this, 'setShortcodePage' ) );
 
 		add_shortcode('print_qmenu', array( $this, 'render_qmenu_template' ) );
+	}
+
+
+
+	public function editMenu() {
+
+   		if( ! DOING_AJAX ){
+			return $this->return_json( 'error' );
+		}
+		
+		//print_r($_POST);
+		$input = $_POST;
+
+		unset($input['option_page'], $input['action'], $input['_wpnonce'], $input['_wp_http_referer'], $input['qmenu-subitems-settings-nonce']);
+
+		$review_insert = $this->cptSanitize($input);//var_dump(get_option('qmenu_options'));
+		//send response
+		if ( ! $review_insert ){
+			return $this->return_json( 'error' );
+		}
+
+		return $this->return_json( 'success' );
+	}
+
+	public function return_json( $status )
+	{
+		$response = array(
+			'status' => $status,
+		);
+
+		wp_send_json( $response );
+		wp_die();
 	}
 
 	public function render_qmenu_template()
 	{
 		ob_start();
 		echo '<link rel="stylesheet" href="' . QMENU_ASSETS_URL . '/frontend-style.css" >';
-		require_once( QMENU_PATH . 'template/qmenu_template.php');
+		require( QMENU_PATH . 'template/qmenu_template.php');
 		return ob_get_clean();
 	}
 
@@ -91,102 +123,35 @@ final class QMENU {
 	
 
 	public function admin_enqueue_scripts(){
-		wp_enqueue_media();
-		//wp_enqueue_style( 'backend_style', QMENU_ASSETS_URL . '/backend-style.css', array(), QMENU_ASSETS_URL);
+
 		//wp_deregister_script('jquery');
+		//wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+    
+		wp_enqueue_media();
+
+		wp_enqueue_script('bootstrap_js', '//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',array('jquery'), null, true);
 
 		wp_enqueue_style( 'bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-        
-        
+        wp_register_script( 'form-handle', QMENU_ASSETS_URL . 'form-handle.js', array('jquery'), '', true);
+
+        wp_localize_script( 'form-handle', 'jsData',[
+	        'ajaxurl' => admin_url('admin-ajax.php')
+	    ]);
+
+		wp_enqueue_script( 'form-handle' );
+
 	}
 
 	public function backend() 
 	{	
 		ob_start();
 		echo '<link rel="stylesheet" href="' . QMENU_ASSETS_URL . '/backend-style.css" >';
-		echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>';//(2)
-		echo '<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>';//(2)
+		// echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>';//(2)
+		// echo '<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>';//(2)
 		require_once ('backend.php');
-		ob_get_flush();
+		return ob_get_flush();
 
 	}
-
-
-	public function setFields() 
-    {	
-    	$args = array();
-    	$args = array(
-        		[
-        			'id' => 'menu_item', 
-        			'title' => 'Item', 
-        			'callback' => array( $this, 'textFieldItem'),
-        			'page' => 'qmenu', //the page where the content from above callback is printed
-        			'section' => 'add-edit-subitems', //same as id in setSections()
-        			'args' => array(
-                        'option_name' => 'qmenu_options',//option name MUST be the same throughtout this $args, else it will return NULL in "sanitize_callback" of register_setting()
-        				'label_for' => 'menu_item',
-        				//'placeholder' => 'eg. product'
-        			)
-        		],
-        		[
-        			'id' => 'menu_subitem', 
-        			'title' => 'Subitem', 
-        			'callback' => array( $this, 'textFieldSubitem'),
-        			'page' => 'qmenu', //the page where the content from above callback is printed
-        			'section' => 'add-edit-subitems', //same as id in setSections()
-        			'args' => array(
-                        'option_name' => 'qmenu_options',//option name MUST be the same throughtout this $args, else it will return NULL in 
-        				'label_for' => 'menu_subitem',
-        				//'placeholder' => 'eg. Product'
-        			)
-        		],
-        );
-
-        return $args;
-    }
-
-
-	public function textFieldItem ( $args )
-	{
-		$option_name = $args['option_name'];
-		$name = $args['label_for'];
-		$value = "";
-		$id_item = stripSpecial( stripUnicode( $_POST['edit_menu'] ) );
-
-		if( isset($_POST['edit_menu']) )
-		{
-			$value = get_option( 'qmenu_options')[$id_item][$name];
-
-			
-		}
-
-		echo '<input type="text" class="regular-text" id="'. $name. '" name="'. $option_name .'[' . $name . ']"  value="'. $value .'" 
-			/>';
-
-		
-	}
-
-	public function textFieldSubitem( $args )
-	{
-		$option_name = $args['option_name'];
-		$name = $args['label_for'];
-		
-		$id_item = stripSpecial( stripUnicode( $_POST['edit_menu'] ) );
-
-		if( isset($_POST['edit_menu']) ){
-			$menu_subitems =  get_option( 'qmenu_options' )[$id_item][$name];
-			foreach ( $menu_subitems as $subitem )
-			{
-			echo '<input type="text" class="regular-text" id="'. $name. '" name="'. $option_name .'[' . $name . ']"  value="'. $subitem .'" 
-				/>';
-			}
-		}
-		
-		echo '<input type="text" class="regular-text" id="'. $name. '" name="'. $option_name .'[' . $name . ']"  value="" 
-			/>'; 
-	
-	}
-
 
 	public function registerCustomFields(){
 
@@ -196,29 +161,19 @@ final class QMENU {
 		$args = array( 'sanitize_callback' => array( $this, 'cptSanitize') );
 
 		register_setting( $option_group, $option_name, $args );
-
-
-		//add_settings_section
-		// $id = 'add-subitems';
-		// $title = 'Add Subitems';
-		// $callback = array( $this, 'setting_section_callback_function_Add');
-		// $page = 'qmenu';
-
-
-
 	}
-	
+
 
 	public function cptSanitize( $input )
 	{	
-		// pr ($input);die;
+		
 		if( in_array_r('menu_id', $input) ){
 			$menu_id = sanitize_text_field(array_shift($input));
 			//pr ($menu_id);die;
 		}
-		//pr ($input);die;
+		//pr ($menu_id);die;
 		$input = customizeArray($input);
-		
+		//print_r ($input);//die;
 		$output = get_option('qmenu_options');
 
 		if( isset($_POST['del_menu']) ){
@@ -231,88 +186,54 @@ final class QMENU {
 		{
 			$menu_id = generateRandomString();
 			$options = get_option('qmenu_options');
-			$menu_id = [];
+			$menu_id_arr = [];
 			foreach ($options as $k => $v){
-			  $menu_id[] = $k;
+			  $menu_id_arr[] = $k;
 			}
 			//pr($menu_id);
-			while( in_array($menu_id, $menu_id) ) $menu_id = generateRandomString();
+			while( in_array($menu_id, $menu_id_arr) ) $menu_id = generateRandomString();
 		}
-
+		//pr ($menu_id);die;
 		if ( $output == array() ) 
-		{
+		{	// add to wp_options the first time
 			$output = array(  $menu_id => $input  );
 			//var_dump ($output);die;
 			return array_filter( $output ) ;
 		}
 		else{
-			foreach ($output as $key => $value){//var_dump ($key);var_dump ($menu_id);die;($input['post_type']);die;
+			foreach ($output as $key => $value){
 			 	if( $key == $menu_id )
-			 	{//var_dump ($menu_id);die;
+			 	{// update current value to wp_options
 			 		$output[$key] = $input;
 			 	} else 
-			 	{
+			 	{// add new value to wp_options
 			 		$output[ $menu_id ] = $input;
 			 	}
 			}
-			return array_filter( $output ) ;
+			//(3)
+			if( ! DOING_AJAX ){
+				return array_filter( $output ) ;
+			}
+			//var_dump ($output);die;
+			$update = update_option( 'qmenu_options', $output );
+			//var_dump(get_option('qmenu_options'));
+			if( $update ) {
+			 	return true;
+			}
+			else {
+				return false;
+			}
+			
+			
+			
 		}			
 		
 	}
-
-	public function save()
-	{	
-		if ( ! isset( $_POST['qmenu-subitems-settings-nonce'] ) || ! wp_verify_nonce( $_POST['qmenu-subitems-settings-nonce'], 'qmenu-subitems-settings' ) ) 
-		{	
-			return;
-		}
-		//var_dump($input);die;
-		$output = get_option('qmenu_options');
-		$menu_item = stripSpecial( stripUnicode($_POST['menu_item']) );
-		$menu_subitems = $_POST['menu_subitem'];
-		//var_dump ($menu_subitems);echo"<hr>";die;
-		if ( $output == array() ) 
-		{
-			$output = array(  $menu_item => array(
-				"menu_item" => $_POST['menu_item'],
-				"menu_subitems" => $menu_subitems
-			)  );
-			//var_dump ($output);die;
-			update_option('qmenu_options', $output);
-		}
-		else{
-			foreach ($output as $key => $value){//var_dump ($key);var_dump ($input);var_dump ($input['post_type']);die;
-			 	if( $key == $menu_item )
-			 	{//var_dump ($output[$key]);var_dump ($new_input[$key]);
-			 		$output[$key] = array(
-						"menu_item" => $_POST['menu_item'],
-						"menu_subitems" => $menu_subitems
-					);
-			 	} else 
-			 	{
-			 		$output[ $menu_item ] = array(
-						"menu_item" => $_POST['menu_item'],
-						"menu_subitems" => $menu_subitems
-					);
-			 	}
-			}
-			update_option('qmenu_options', $output);
-		}
-
-			
-		
-	}
-
-	// public function setting_section_callback_function_Add( $arg )
-	// {
-	// 	echo '<p>Title: ' . $arg['title'] . '</p>';
-	// }
 
 	public function delOption(){
 		delete_option( 'qmenu_options' );
 		delete_option( 'qmenu_options' );
 	}
-
 
 	//check if all values in multidimensional array are empty
 	function emptyArray($array) 
@@ -344,3 +265,4 @@ final class QMENU {
 //add_settings_field only use when there is a need to create fields using add_settings_field, if you create fields yourself then no need.
 //(1)parent là qmenu, ko phải admin.php?page=qmenu vì: ref: https://developer.wordpress.org/reference/functions/add_submenu_page/?replytocom=1404#feedback-editor-1404 . You can refer to CustomPostTypeController.php at AlecaddPlugin
 //(2): phải để đó, chứ enqueue thì nó chạy ko đúng lúc làm deep linking cho tab boostrap 
+//(3): if it is ajax update, then use update_option as "return array_filter( $output )"" only works in api setting circumstance

@@ -10,7 +10,7 @@ header( 'Content-Type: ' . get_option( 'html_type' ) . '; charset=' . get_option
 if ( ! defined( 'WP_ADMIN' ) ) {
 	require_once __DIR__ . '/admin.php';
 }
-
+echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>';
 /**
  * In case admin-header.php is included in a function.
  *
