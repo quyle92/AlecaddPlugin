@@ -7,7 +7,11 @@
  * @param  array  $rules
  * @return string
  */
-function ux_builder_element_style_tag( $id, $rules, $atts ) {
+
+function test (){
+  //echo "aaaaaaaaaaaaaaa";
+}
+function ux_builder_element_style_tag( $id, $rules, $atts ) {//var_dump($rules);//var_dump($atts);
   $breakpoints = get_ux_builder_breakpoints();
 
   // Just return here if no attributes are set.
@@ -22,10 +26,10 @@ function ux_builder_element_style_tag( $id, $rules, $atts ) {
 
   foreach ( $rules as $param_name => $rule ) {
     if ( ! array_key_exists( $param_name, $atts ) ) continue;
-
+    //var_dump($atts);
     // Collect all responsive values for this option.
     $values = ux_builder_get_responsive_values( $param_name, $atts );
-
+    //var_dump($values);//die;
     // Move responsive values to lowest possible breakpoint.
     $breakpoint_values = ux_builder_process_breakpoint_values( $values );
 

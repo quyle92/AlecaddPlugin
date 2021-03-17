@@ -271,12 +271,18 @@ function danh_muc_san_pham(){
       ),
         'size' => array(
         'type'    => 'slider',
-        'heading' => __( 'Size' ),
+        'heading' => __( 'Font Size' ),
         'default' => 100,
         'unit'    => '%',
         'min'     => 20,
         'max'     => 300,
         'step'    => 1,
+        'responsive' => true,
+      ),
+      'custom_title' => array(
+        'type'    => 'textfield',
+        'heading' => 'Custom Title',
+        'default' => '',
       ),
         'margin_top' => array(
         'type'        => 'scrubfield',
@@ -286,6 +292,7 @@ function danh_muc_san_pham(){
         'min'         => - 100,
         'max'         => 300,
         'step'        => 1,
+        'responsive' => true,
       ),
       'icon_img' => array(
         'type' => 'image',
@@ -309,9 +316,9 @@ function danh_muc_san_pham(){
         'heading' => 'Link Text',
         'default' => '',
       ),
-      'link' => array(
+      'custom_link' => array(
         'type'    => 'textfield',
-        'heading' => 'Link',
+        'heading' => 'Custom Link',
         'default' => '',
       ),
        
@@ -320,7 +327,7 @@ function danh_muc_san_pham(){
 
 function render_danh_muc_san_pham( $atts, $content = null ){
   extract( shortcode_atts( array(
-    '_id' => 'title-'.rand(),
+    '_id' => 'danhMucSanPham-'.rand(),
     'class' => '',
     'visibility' => '',
     'ttit_cat_ids' => '',
@@ -328,8 +335,10 @@ function render_danh_muc_san_pham( $atts, $content = null ){
     'link_text' => '',
     'bg_color' => '',
     'icon_img' => '',
-     'size' => '',
+    'size' => '',
+    'custom_title' => '',
      'margin_top' => '',
+     'custom_link' => '',
     'quick_link' => ''//https://shop1888.com/img/xemthem.png
   ), $atts ) );
 
@@ -339,6 +348,7 @@ function render_danh_muc_san_pham( $atts, $content = null ){
   } else {
     $ids = array();
   }
+
   $args = array(
     'taxonomy' => 'product_cat',
     'include'    => $ids,
@@ -347,6 +357,7 @@ function render_danh_muc_san_pham( $atts, $content = null ){
     'hide_empty' => false,
     'bg_color'=> ''
   );
+
   //Cách 1
   $product_categories = get_terms( $args );
   $cat_name = array();
@@ -357,7 +368,7 @@ function render_danh_muc_san_pham( $atts, $content = null ){
       $cat_link = get_term_link( $category );
   }
 }
-
+//  var_dump($cat_name);
   //Cách 2
   $the_query = new WP_Term_Query( $args);
   $loai_sp = array();
@@ -370,21 +381,48 @@ function render_danh_muc_san_pham( $atts, $content = null ){
   if($icon_img) {
     $icon_img = flatsome_get_image_url($icon_img);
   }
-
+//var_dump($icon_img);
   $css_args = array();//size
   $css_args[] = array( 'attribute' => 'background-color', 'value' => $bg_color);
-  $css_args_h2[] = array( 'attribute' => 'font-size', 'value' => $size, 'unit' => '%');
   $css_args_h2[] = array( 'attribute' => 'margin-top', 'value' => $margin_top);
 
-return '
-<div class="tieude-sp" '. get_shortcode_inline_css($css_args).'>
-            <h2 class="ten-dmsp" ' . get_shortcode_inline_css( $css_args_h2 ) . ' > 
-                <img src="' . $icon_img . var_dump( get_shortcode_inline_css( $css_args_h2 ) ) . '">
-                  ' .  $cat_name[0]  . '            
-             </h2>
-            <a class="xt-dmsp" href="' . $cat_link . '" ' . get_shortcode_inline_css( $css_args_h2 ) . '> <img src="https://shop1888.com/img/xemthem.png">' . $atts['link_text'] . ' </a> 
+ob_start();
+?>
+ <div id="<?php echo $_id; ?>" class="tieude-sp" <?=get_shortcode_inline_css($css_args)?> >
+    <h2 class="ten-dmsp" <?php //echo get_shortcode_inline_css( $css_args_h2 )?> > 
+        <img src="<?=$icon_img?> ">
+          <?= ( ! isset( $atts[ 'ttit_cat_ids' ] ) ) ? $custom_title : wp_kses_post( $cat_name[0] )  ?>            
+     </h2>
+     <a class="xt-dmsp" href="<?=( ( $cat_link == "" ) ? $custom_link : $cat_link )?>" <?php //echo (get_shortcode_inline_css( $css_args_h2 ) )?> >
+        <img src="https://shop1888.com/img/xemthem.png"><?=$link_text?> </a> 
 </div>
-';
+<?php
+ $args = array(
+    'size' => array(
+      'selector' => '.ten-dmsp',
+      'property' => 'font-size',
+      'unit' => '%',
+    ),
+    'margin_top' => array(
+      'selector' => '.xt-dmsp',
+      'property' => 'margin-top',
+      'unit' => 'px',
+    )
+  );
+
+require_once  get_template_directory() . '/inc/builder/core/server/helpers/elements.php';
+echo get_template_directory() . '/inc/builder/core/server/helpers/elements.php';
+var_dump(ux_builder_element_style_tag($_id, $args, $atts));
+echo ux_builder_element_style_tag($_id, $args, $atts);
+?>
+
+
+<?php
+
+$content = ob_get_contents();
+ob_end_clean();
+return $content;
+
 }
 add_shortcode('danh_muc_san_pham', 'render_danh_muc_san_pham');
 

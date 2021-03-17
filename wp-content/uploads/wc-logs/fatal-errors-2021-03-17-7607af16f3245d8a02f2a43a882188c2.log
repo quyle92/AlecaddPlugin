@@ -1,0 +1,386 @@
+2021-03-17T09:38:26+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:38:35+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:38:35+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:38:57+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:39:54+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:39:54+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:40:19+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:40:35+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:41:55+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:41:55+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:42:36+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:42:36+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:42:57+00:00 CRITICAL require_once(): Failed opening required '../module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 6
+
+2021-03-17T09:42:57+00:00 CRITICAL require_once(): Failed opening required '../module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 6
+
+2021-03-17T09:43:26+00:00 CRITICAL Uncaught Error: Class 'Boostify_Header_Footer\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config. in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:43:55+00:00 CRITICAL Uncaught Error: Class 'Elementor\Base_Widget' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:19
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(17): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(38): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(47): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): req in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 19
+
+2021-03-17T09:44:43+00:00 CRITICAL Uncaught Error: Class 'Elementor\Cart_Icon' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php:23
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): My_Elementor_Widget->register_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\elements\column.php(1032): Elementor\Widgets_Manager->get_widget_types('wp-widget-wooco...')
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(916): Eleme in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php on line 23
+
+2021-03-17T09:46:30+00:00 CRITICAL Uncaught Error: Class 'Elementor\Cart_Icon' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php:23
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): My_Elementor_Widget->register_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\elements\column.php(1032): Elementor\Widgets_Manager->get_widget_types('wp-widget-wooco...')
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(916): Eleme in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php on line 23
+
+2021-03-17T09:49:04+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(218): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\managers\widgets.php(323): Elementor\Core\Base\Document->render_element(Array)
+#3 [internal function]: Elementor\Widgets_Manager->ajax_render_widget(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 F:\webdocs\alecaddplugin\wp-includes\clas in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:49:10+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(583): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\db.php(195): Elementor\Widget_Base->render_plain_content()
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\db.php(201): Elementor\DB->render_element_plain_content(Array)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\db.php(201): Elementor\DB->render_element_plain_content(Array)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\db.php(534): Elementor\DB->render_element_plain_content(Array)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\db.php(515): Elementor\DB->get_plain_text_ in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:49:18+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(643): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Widget_Base->get_raw_data(true)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Element_Base->get_raw_data(true)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(714): Elementor\Element_Base->get_raw_data(true)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(478): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\b in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:52:28+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(643): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Widget_Base->get_raw_data(true)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Element_Base->get_raw_data(true)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(714): Elementor\Element_Base->get_raw_data(true)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(478): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\b in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:53:55+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 3
+
+2021-03-17T09:53:55+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 3
+
+2021-03-17T09:55:04+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(643): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Widget_Base->get_raw_data(true)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Element_Base->get_raw_data(true)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(714): Elementor\Element_Base->get_raw_data(true)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(478): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\b in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:56:27+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(643): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Widget_Base->get_raw_data(true)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Element_Base->get_raw_data(true)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(714): Elementor\Element_Base->get_raw_data(true)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(478): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\b in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:56:35+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(643): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Widget_Base->get_raw_data(true)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Element_Base->get_raw_data(true)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(714): Elementor\Element_Base->get_raw_data(true)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(478): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\b in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:57:25+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:115
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(530): Cart_Icon->render()
+#1 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\widget-base.php(643): Elementor\Widget_Base->render_content()
+#2 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Widget_Base->get_raw_data(true)
+#3 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\base\element-base.php(722): Elementor\Element_Base->get_raw_data(true)
+#4 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(714): Elementor\Element_Base->get_raw_data(true)
+#5 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\core\base\document.php(478): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#6 F:\webdocs\alecaddplugin\wp-content\plugins\elementor\includes\b in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 115
+
+2021-03-17T09:58:47+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): requir in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:58:48+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): requir in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:58:54+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): requir in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:59:16+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): requir in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:59:38+00:00 CRITICAL Uncaught Error: Class 'BoostifyWoocommerce' not found in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): requir in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:59:52+00:00 CRITICAL Uncaught Error: Undefined class constant 'test' in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): require_once in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:59:52+00:00 CRITICAL Uncaught Error: Undefined class constant 'test' in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): require_once in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T09:59:57+00:00 CRITICAL Uncaught Error: Undefined class constant 'test' in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php:4
+Stack trace:
+#0 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(19): require_once()
+#1 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(41): My_Elementor_Widget->load_widgets_files()
+#2 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(8): My_Elementor_Widget->__construct()
+#3 F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\my-widgets.php(50): My_Elementor_Widget::get_instance()
+#4 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(287): my_elementor_widget('')
+#5 F:\webdocs\alecaddplugin\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 F:\webdocs\alecaddplugin\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\webdocs\alecaddplugin\wp-settings.php(546): do_action('init')
+#8 F:\webdocs\alecaddplugin\wp-config.php(169): require_once in F:\webdocs\alecaddplugin\wp-content\themes\astra\custom-widgets\class-cart-icon.php on line 4
+
+2021-03-17T10:50:58+00:00 CRITICAL require_once(): Failed opening required 'custom-widgets/my-widgets.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\functions.php on line 161
+
+2021-03-17T10:51:18+00:00 CRITICAL require_once(): Failed opening required 'custom-widgets/my-widgets.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\functions.php on line 161
+
+2021-03-17T10:51:39+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/custom-widgets/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\EleCustomWidgets\class-cart-icon.php on line 3
+
+2021-03-17T10:51:39+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/custom-widgets/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\EleCustomWidgets\class-cart-icon.php on line 3
+
+2021-03-17T10:51:47+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/custom-widgets/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\EleCustomWidgets\class-cart-icon.php on line 3
+
+2021-03-17T10:52:02+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/custom-widgets/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\EleCustomWidgets\class-cart-icon.php on line 3
+
+2021-03-17T10:52:19+00:00 CRITICAL require_once(): Failed opening required 'F:\webdocs\alecaddplugin/wp-content/themes/astra/custom-widgets/module/class-woocommerce.php' (include_path='C:\xampp\php\PEAR') in F:\webdocs\alecaddplugin\wp-content\themes\astra\EleCustomWidgets\class-cart-icon.php on line 3
+

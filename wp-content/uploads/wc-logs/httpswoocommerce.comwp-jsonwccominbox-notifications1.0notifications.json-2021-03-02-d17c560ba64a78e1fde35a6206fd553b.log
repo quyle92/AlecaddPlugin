@@ -1,0 +1,36 @@
+2021-03-02T01:25:17+00:00 ERROR Error getting remote inbox notification data feed
+2021-03-02T01:25:17+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: SSL connection timeout
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2021-03-02T01:25:22+00:00 ERROR Error getting remote inbox notification data feed
+2021-03-02T01:25:22+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Operation timed out after 5012 milliseconds with 0 out of 0 bytes received
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+

@@ -43,6 +43,7 @@
 /** The name of the database for WordPress */
 
 define( 'DB_NAME', 'alecaddd' );
+//define( 'DB_NAME', 'test' );
 
 
 /** MySQL database username */

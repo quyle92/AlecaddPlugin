@@ -158,7 +158,7 @@ if ( version_compare( PHP_VERSION, '5.3', '>=' ) ) {
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
-require_once 'custom-widgets/my-widgets.php';
+require_once 'EleCustomWidgets/my-widgets.php';
 
 function my_test(){
 	$a = dirname( __FILE__ );

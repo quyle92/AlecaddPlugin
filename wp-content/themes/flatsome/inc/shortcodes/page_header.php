@@ -1,5 +1,6 @@
-<?php
-
+<?php //wp-content/themes/flatsome/inc/builder/core/server/helpers/elements.php
+// require get_template_directory() . '/inc/builder/core/server/helpers/elements.php';
+//  ux_builder_element_style_tag( $id, $rules, $atts )
 // [page_header]
 function flatsome_page_header_shortcode($atts) {
   $atts = shortcode_atts( array(
@@ -209,7 +210,7 @@ function flatsome_page_header_shortcode($atts) {
           'property' => 'background-position',
         ),
       );
-      echo ux_builder_element_style_tag($_id, $args, $atts);
+      echo ux_builder_element_style_tag($_id, $args, $atts);//var_dump(ux_builder_element_style_tag($_id, $args, $atts));
     ?>
   </div><!-- .page-title -->
   <?php if($style == 'divided') echo '<div class="container header-wrapper-divider"><hr/></div>'; ?>

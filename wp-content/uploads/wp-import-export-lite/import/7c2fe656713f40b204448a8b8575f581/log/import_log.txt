@@ -1,0 +1,56 @@
+[05:06:19] <strong>Record</strong> #1
+[05:06:19] <strong>ERROR</strong> : Could not insert post into the database.
+[05:06:19] <strong>Record</strong> #2
+[05:06:22] <strong>ERROR</strong> : Invalid page template.
+[05:06:22] <strong>Record</strong> #3
+[05:06:24] <strong>ERROR</strong> : Invalid page template.
+[05:06:24] <strong>Record</strong> #4
+[05:06:24] <strong>ERROR</strong> : Invalid page template.
+[05:06:24] <strong>Record</strong> #5
+[05:06:26] <strong>ERROR</strong> : Invalid page template.
+[05:06:26] <strong>Record</strong> #6
+[05:06:29] <strong>ERROR</strong> : Invalid page template.
+[05:06:29] <strong>Record</strong> #7
+[05:06:31] <strong>ERROR</strong> : Invalid page template.
+[05:06:31] <strong>Record</strong> #8
+[05:06:45] <strong>ERROR</strong> : Invalid page template.
+[05:06:45] <strong>Record</strong> #9
+[05:06:45] Existing item found #167
+[05:06:59] <strong>Warning</strong> : File Download Error : URL `typography_font_size"":{""unit"":""px""` is not valid.
+[05:06:59] post #167 Successfully Imported
+[05:06:59] <strong>Record</strong> #10
+[05:07:00] <strong>ERROR</strong> : Could not insert post into the database.
+[05:07:00] <strong>Record</strong> #11
+[05:07:04] <strong>ERROR</strong> : Invalid page template.
+[05:07:04] <strong>Record</strong> #12
+[05:07:05] <strong>ERROR</strong> : Could not insert post into the database.
+[05:07:05] <strong>Record</strong> #13
+[05:07:08] <strong>ERROR</strong> : Invalid page template.
+[05:07:08] <strong>Record</strong> #14
+[05:07:15] <strong>ERROR</strong> : Invalid page template.
+[05:07:15] <strong>Record</strong> #15
+[05:07:15] Existing item found #22
+[05:07:15] post #22 Successfully Imported
+[05:07:15] <strong>Record</strong> #16
+[05:07:15] Existing item found #143
+[05:07:15] <strong>Warning</strong> : File Download Error : URL `primary_color"":""#4054b2""` is not valid.
+[05:07:15] post #143 Successfully Imported
+[05:07:15] <strong>Record</strong> #17
+[05:07:15] Existing item found #107
+[05:07:23] <strong>Warning</strong> : File Download Error : URL `u0111u00e0o tu1ea1o cu00e1c chu01b0u01a1ng tru00ecnh Thu00e2n - Tu00e2m - Tru00ed .u00a0u00a0&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style="color: #000000;"&gt;Khu00f4ng gian thou00e1ng u0111u00e3ng` is not valid.
+[05:07:23] post #107 Successfully Imported
+[05:07:23] <strong>Record</strong> #18
+[05:07:23] Existing item found #153
+[05:07:24] <strong>ERROR</strong> : something wrong, ID = 0 was generated.
+[05:07:24] <strong>Record</strong> #19
+[05:07:24] Existing item found #159
+[05:07:25] <strong>Warning</strong> : File Download Error : URL `typography_typography"":""custom""` is not valid.
+[05:07:25] post #159 Successfully Imported
+[05:07:25] <strong>Record</strong> #20
+[05:07:25] <strong>ERROR</strong> : Invalid page template.
+[05:07:27] <strong>Record</strong> #21
+[05:07:29] <strong>ERROR</strong> : Invalid page template.
+[05:07:29] <strong>Record</strong> #22
+[05:07:32] <strong>ERROR</strong> : Could not insert post into the database.
+[05:07:32] <strong>Record</strong> #23
+[05:07:41] post #178 Successfully Imported
